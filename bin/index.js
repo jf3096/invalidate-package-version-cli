@@ -9,7 +9,10 @@ program
 program
     .command('validate [packagePath]')
     .description('add something')
-    .action(bin_1.default.validatePackagePath);
+    .action((packagePath) => {
+    const programActions = new bin_1.default(packagePath);
+    programActions.validatePackagePath();
+});
 program
     .parse(process.argv);
 if (process.argv.length === 2) {

@@ -1,7 +1,7 @@
 {
-  "name": "publish-invalid-version-validate-cli",
-  "version": "0.0.1",
-  "description": "检查package.json dependencies引用了错误的version",
+  "name": "invalidate-package-version-cli",
+  "version": "0.1.0",
+  "description": "检查 package.json 多个dependencies 引用了错误格式的 version 版本",
   "devDependencies": {
     "@types/chai": "^4.0.2",
     "@types/commander": "2.12.2",
@@ -17,7 +17,7 @@
     "typescript": "2.7.2"
   },
   "bin": {
-    "invalid-version-validate": "bin/index.js"
+    "invalidate-package-version": "bin/index.js"
   },
   "scripts": {
     "test": "mocha src/**/*.spec.ts --watch-extensions ts --require ts-node/register -t 2000",
