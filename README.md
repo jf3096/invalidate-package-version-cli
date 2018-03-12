@@ -37,12 +37,12 @@
   ]
 ```
 
-常用4种用法：<br />
+4种用法：<br />
 
-invalidPattern[0] 会被代码转换成 new RegExp(invalidPatterns[0]), 即判断是否包含该字段。
-invalidPattern[1] 会被代码转换成 new RegExp(invalidPatterns[1][0],invalidPatterns[1][1]), 第二个字段可用于配置RegExp Flag。
-invalidPattern[2] 会被代码转换成 new RegExp(invalidPatterns[2]), 由于该字符串包含特殊字符 `^`，那么被转成 Regex 后表示字符串必须以 `file：` 开头。
-invalidPattern[3] 会被代码转换成 new RegExp(invalidPatterns[3]), 可使用 `\\` 对 RegexExp 关键字转义。
+invalidPattern[0] 会被代码转换成 new RegExp(invalidPatterns[0]), 即判断是否包含该字段。<br />
+invalidPattern[1] 会被代码转换成 new RegExp(invalidPatterns[1][0],invalidPatterns[1][1]), 第二个字段可用于配置RegExp Flag。<br />
+invalidPattern[2] 会被代码转换成 new RegExp(invalidPatterns[2]), 由于该字符串包含特殊字符 `^`，那么被转成 Regex 后表示字符串必须以 `file：` 开头。<br />
+invalidPattern[3] 会被代码转换成 new RegExp(invalidPatterns[3]), 可使用 `\\` 对 RegexExp 关键字转义。<br />
 
 ## 作者
 Ailun She
