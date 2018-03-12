@@ -9,7 +9,7 @@
 ## 安装
 
 ```shell
-  npm i publish-invalid-version-validate-cli -g
+  npm i invalidate-package-version-cli -g
 ```
 
 ## 使用
@@ -19,7 +19,7 @@
 ```json
 {
   scripts: {
-    "prepublishOnly": "invalid-version-validate validate [package.json路径(可选)]"
+    "prepublishOnly": "invalidate-package-version validate [package.json路径(可选)]"
   }
 }
 ```
@@ -43,6 +43,10 @@ invalidPattern[0] 会被代码转换成 new RegExp(invalidPatterns[0]), 即判�
 invalidPattern[1] 会被代码转换成 new RegExp(invalidPatterns[1][0],invalidPatterns[1][1]), 第二个字段可用于配置RegExp Flag。<br />
 invalidPattern[2] 会被代码转换成 new RegExp(invalidPatterns[2]), 由于该字符串包含特殊字符 `^`，那么被转成 Regex 后表示字符串必须以 `file：` 开头。<br />
 invalidPattern[3] 会被代码转换成 new RegExp(invalidPatterns[3]), 可使用 `\\` 对 RegexExp 关键字转义。<br />
+
+## 截图
+
+![img](./screenshots/demo-error.png)
 
 ## 作者
 Ailun She
