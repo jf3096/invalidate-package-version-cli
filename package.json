@@ -37,7 +37,11 @@
     "README.md"
   ],
   "author": "Ailun She",
-  "license": "MIT",
+  "email": "529360897@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jf3096/invalidate-package-version-cli.git"
+  },
   "dependencies": {
     "commander": "2.15.0"
   }
