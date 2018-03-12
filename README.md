@@ -6,6 +6,10 @@
 因个人疏忽部署了如 `"@test/git-remote": "file:E:/projects/git-remote"` 的依赖包。所以当前工具
 能够通过在 `prepublishOnly` 对当前 package.json 进行一系列检查从而杜绝这种情况再次发生。
 
+## 原理
+
+检查 package.json 中 `devDependencies, peerDependencies, dependencies, bundledDependencies` 是否存在指定不合法规则的版本号。
+
 ## 安装
 
 ```shell
